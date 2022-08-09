@@ -1,0 +1,6 @@
+/* variables */
+@import "../variables/reset.css";
+@import "../variables/variable.css";
+
+/* css */
+@import "../css/main.css";
