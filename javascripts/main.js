@@ -9,10 +9,18 @@ setInterval(setTime, 1000);
 
 const loginForm = document.querySelector("#login");
 const loginInput = document.querySelector("#login input");
+const greeting = document.querySelector("#greeting-user");
 
-function placeUserName(event) {
-  event.preventDefault();
-  const userName = loginInput.value;
-  loginForm.classList.add("hidden");
-  console.log(userName);
+function submitHandler(e) {
+  if (e.keyCode == 13) {
+    const trigger = function placeUserName() {
+      loginForm.classList.add("hidden");
+      const userName = loginInput.value;
+      greeting.innerText = "Good day " + userName;
+      greeting.classList.remove("hidden");
+    };
+    trigger();
+  }
 }
+
+loginForm.addEventListener("keydown", submitHandler);

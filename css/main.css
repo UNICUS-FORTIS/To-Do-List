@@ -36,8 +36,8 @@ main {
 #login input {
   text-align: center;
   font-family: var(--Noto-sans);
-  font-size: 2.5em;
   color: cadetblue;
+  font-size: 2.5em;
   width: 11em;
   padding-top: 0.5em;
   padding-left: 0.5em;
@@ -46,6 +46,19 @@ main {
   border: none;
   border-bottom: 1px solid white;
   background: transparent;
+  margin-bottom: 0.6em;
+}
+
+#greeting-user {
+  text-align: center;
+  font-family: var(--Noto-sans);
+  font-size: 2.5em;
+  color: cadetblue;
+  width: 11em;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0px;
   margin-bottom: 0.6em;
 }
 
