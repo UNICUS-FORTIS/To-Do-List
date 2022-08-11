@@ -2,7 +2,10 @@ const clock = document.querySelector("#clock");
 
 function setTime() {
   const timer = new Date();
-  clock.innerText = `${timer.getHours()} : ${timer.getMinutes()}`;
+  const hours = String(timer.getHours()).padStart(2, "0");
+  const minutes = String(timer.getMinutes()).padStart(2, "0");
+
+  clock.innerText = `${hours} : ${minutes}`;
 }
 
 setInterval(setTime, 1000);
